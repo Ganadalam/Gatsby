@@ -26,7 +26,8 @@ const PostItemWrapper = styled(Link)`
 
 const ThumbnailImage = styled.img`
   width: 100%;
-  height: 200px;
+  height: auto;
+  max-height: 250px;
   border-radius: 10px 10px 0 0;
   object-fit: cover;
 `

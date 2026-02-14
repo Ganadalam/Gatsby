@@ -9,6 +9,7 @@ const ProfileImageWrapper = styled.img`
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
+  flex-shrink: 0;
 `
 
 // const PROFILE_IMAGE_LINK =
