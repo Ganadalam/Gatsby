@@ -1,9 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Developer's Blog`,
-    description: `Front & Full stack`,
-    author: `Euina Jeong`,
-    siteUrl: '<https://my-website-link.com>', // 배포 후 변경 예정
+    title: `Developr's Blog`,
+    description: `me`,
+    author: `euina Jeong`,
   },
   plugins: [
     {
