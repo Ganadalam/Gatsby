@@ -3,7 +3,7 @@ module.exports = {
     title: `Developr's Blog`,
     description: `me`,
     author: `euina Jeong`,
-    siteUrl: 'https://my-website-link.com', // 배포 후 변경 예정
+    siteUrl: 'https://Ganadalam.github.io', // 배포 후 변경 예정
   },
   plugins: [
     {
@@ -19,7 +19,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: '<https://my-website.com/>',
+        siteUrl: 'https://Ganadalam.github.io/',
         stripQueryString: true,
       },
     },
