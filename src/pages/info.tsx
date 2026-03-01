@@ -3,7 +3,6 @@ import { graphql } from 'gatsby'
 import { Global, css } from '@emotion/react'
 import styled from '@emotion/styled'
 
-
 type InfoPageProps = {
   data: {
     site: {
@@ -15,7 +14,6 @@ type InfoPageProps = {
     }
   }
 }
-
 
 const globalStyle = css`
   * {
@@ -60,7 +58,6 @@ const InfoPage: FunctionComponent<InfoPageProps> = function ({
     </div>
   )
 }
-
 
 export default InfoPage
 

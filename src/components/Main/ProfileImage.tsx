@@ -1,28 +1,27 @@
 import React, { FunctionComponent } from 'react'
 import styled from '@emotion/styled'
-import profileImg from '../images/profile.png'  // 경로 맞게 수정
+import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image'
 
-const ProfileImageWrapper = styled.img`
-  width: 150px;
-  height: 150px;
+type ProfileImageProps = {
+  profileImage: IGatsbyImageData
+}
+
+const ProfileImageWrapper = styled(GatsbyImage)`
+  width: 120px;
+  height: 120px;
   margin-bottom: 30px;
   border-radius: 50%;
-  object-fit: cover;
-  object-position: center;
-  flex-shrink: 0;
+
+  @media (max-width: 768px) {
+    width: 80px;
+    height: 80px;
+  }
 `
 
-// const PROFILE_IMAGE_LINK =
-//   'https://raw.githubusercontent.com/Ganadalam/Gatsby/main/src/images/profile.png'
-// const ProfileImageWrapper = styled.img`
-//   width: 120px;
-//   height: 120px;
-//   margin-bottom: 30px;
-//   border-radius: 50%;
-// `
-
-const ProfileImage: FunctionComponent = function () {
-  return <ProfileImageWrapper src={profileImg} alt="Profile Image" />
+const ProfileImage: FunctionComponent<ProfileImageProps> = function ({
+  profileImage,
+}) {
+  return <ProfileImageWrapper image={profileImage} alt="Profile Image" />
 }
 
 export default ProfileImage
