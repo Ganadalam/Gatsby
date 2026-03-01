@@ -7888,6 +7888,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-plugin-canonical-urls@npm:^5.16.0":
+  version: 5.16.0
+  resolution: "gatsby-plugin-canonical-urls@npm:5.16.0"
+  dependencies:
+    "@babel/runtime": "npm:^7.20.13"
+  peerDependencies:
+    gatsby: ^5.0.0-next
+  checksum: 10c0/b71ec6f80129cfed93a4f2858f3403436c4ece7a54b4158db4ff6487971b5cf0e3fc18638e315434b54b602ce7cc5a92a24b572ceacacedacfac7573807da593
+  languageName: node
+  linkType: hard
+
 "gatsby-plugin-emotion@npm:^8.16.0":
   version: 8.16.0
   resolution: "gatsby-plugin-emotion@npm:8.16.0"
@@ -8194,6 +8205,7 @@ __metadata:
     eslint-config-prettier: "npm:^10.1.8"
     eslint-plugin-prettier: "npm:^5.5.5"
     gatsby: "npm:^5.16.0"
+    gatsby-plugin-canonical-urls: "npm:^5.16.0"
     gatsby-plugin-emotion: "npm:^8.16.0"
     gatsby-plugin-image: "npm:^3.14.0"
     gatsby-plugin-manifest: "npm:^5.14.0"
