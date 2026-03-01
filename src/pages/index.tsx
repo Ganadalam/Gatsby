@@ -8,6 +8,7 @@ import PostList from 'components/Main/PostList'
 import { graphql } from 'gatsby'
 import { IGatsbyImageData } from 'gatsby-plugin-image'
 import queryString, { ParsedQuery } from 'query-string'
+import Template from 'components/Common/Template'
 
 // GraphQL 데이터 타입 정의
 export type PostType = {
@@ -46,7 +47,7 @@ const Container = styled.div`
   height: 100%;
 `
 
-const IndexPage: FunctionComponent<IndexPageProps> = ({
+const IndexPage: FunctionComponent<IndexPageProps> = function ({
   location: { search },
   data: {
     allMarkdownRemark: { edges },
@@ -54,7 +55,7 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
       childImageSharp: { gatsbyImageData },
     },
   },
-}) => {
+}) {
   // URL에서 카테고리 파싱
   const parsed: ParsedQuery<string> = queryString.parse(search)
   const selectedCategory: string =
@@ -84,16 +85,14 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
   }, [edges])
 
   return (
-    <Container>
-      <GlobalStyle />
+    <Template>
       <Introduction profileImage={gatsbyImageData} />
       <CategoryList
         selectedCategory={selectedCategory}
         categoryList={categoryList}
       />
       <PostList selectedCategory={selectedCategory} posts={edges} />
-      <Footer />
-    </Container>
+    </Template>
   )
 }
 
