@@ -3,7 +3,7 @@ module.exports = {
     title: `Developr's Blog`,
     description: `me`,
     author: `euina Jeong`,
-    siteUrl: 'https://Ganadalam.github.io', // 배포 후 변경 예정
+    siteUrl: 'https://Ganadalam.github.io/',
   },
   plugins: [
     {
