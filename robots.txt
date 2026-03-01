@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://ganadalam.github.io/sitemap-index.xml
+Host: https://ganadalam.github.io
